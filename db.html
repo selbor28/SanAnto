@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>San Anto Database</title>
+<link rel="stylesheet" href="css/styles.css">
+<script type="text/javascript" src="js/scripts.js"></script>
+</script>
+
+</head>
+
+<body>
+<h1>San Anto Database</h1>
+<nav>
+     	<a href="index.html">Home</a> |
+        <a href="db.html">Database</a> |
+        <a href="/bcards/bcards.html">Business Cards</a> |
+	<a href="invoice.html">Invoice</a>
+</nav>
+<form id="clients" action="action.php" method="post">
+  <h2>Add client to Database:</h2>
+  <label for="fname">First name:</label>
+  <input type="text" id="fname" name="fname">
+  <label for="lname">Last name:</label>
+  <input type="text" id="lname" name="lname"><br><br>
+  <label for="address">Address:</label>
+  <input type="text" id="address" name="address">
+  <label for="city">City:</label>
+  <input type="text" id="city" name="city">
+  <label for="state">State:</label>
+  <input type="text" id="state" name="state">
+  <label for="zipcode">Zip Code:</label>
+  <input type="text" id="zipcode" name="zipcode"><br><br>
+  <label for="phone">Phone:</label>
+  <input type="text" id="phone" name="phone">
+  <label for="email">E-mail:</label>
+  <input type="text" id="email" name="email" value="abc@gmail.com"><br><br>
+  <input type="submit" value="Submit">
+  <button type="button" onclick="cleardb()">Clear Fields</button>
+</form>
+<form id="bclients" action="baction.php" method="post">
+  <h2>Add client to Database:</h2>
+  <label for="bname">Business Name:</label>
+  <input type="text" id="bname" name="bname">
+  <label for="cname">Contact Name:</label>
+  <input type="text" id="cname" name="cname"><br><br>
+  <label for="address">Address:</label>
+  <input type="text" id="address" name="address">
+  <label for="city">City:</label>
+  <input type="text" id="city" name="city">
+  <label for="state">State:</label>
+  <input type="text" id="state" name="state">
+  <label for="zipcode">Zip Code:</label>
+  <input type="text" id="zipcode" name="zipcode"><br><br>
+  <label for="phone">Phone:</label>
+  <input type="text" id="phone" name="phone">
+  <label for="email">E-mail:</label>
+  <input type="text" id="email" name="email" value="abc@gmail.com"><br><br>
+  <label for="website">Website:</label>
+  <input type="text" id="website" name="website"><br><br>
+  <input type="submit" value="Submit">
+  <button type="button" onclick="clearbdb()">Clear Fields</button>
+</form>
+<form id="inventory" action="actioni.php" method="post">
+<h2>Tool and Parts Inventory</h2>
+<label for="item">Item:</label>
+<input type="text" id="item" name="item"><br><br>
+<label for="description">Description:</label>
+<input type="text" id="description" name="description"><br><br>
+<label for="quantity">Quantity:</label>
+<input type="text" id="quantity" name="quantity"><br><br>
+<select name="type" id="type">
+<option value="tool">Tool</option>
+<option value="part">Part</option>
+</select><br><br>
+<label for="location">Location:</label>
+<input type="text" id="location" name="location"><br><br>
+<input type="submit" value="Submit">
+<button type="button" onclick="clearidb()">Clear Fields</button>
+</form>
+
+</body>
+
+</html>

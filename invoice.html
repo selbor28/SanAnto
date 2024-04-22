@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta http-equiv="X-UA-Compatible" content="IE-edge" />
+<title>San Anto</title>
+<link rel="stylesheet" href="css/styles.css">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
+
+<script type="text/javascript" src="js/scripts.js"></script>
+</script>
+</head>
+
+
+<body>
+<h1>Invoice</h1>
+<nav>
+        <a href="index.html">Home</a> |
+        <a href="db.html">Database</a> |
+        <a href="/bcards/bcards.html">Business Cards</a> |
+	<a href="invoice.html">Invoice</a>
+</nav>
+
+<form id="invoiceForm">
+<fieldset>	
+<legend>Customer Information:</legend>
+<label for="bName">Customer:</label>
+<input type="text" id="bName" name="bName" required>
+<br>
+<label for="cName">Name:</label>
+<input type="text" id="cName" name="cName" required></br>
+<label for="address">Address:</label>
+<input type="text" id="address" name="address" required><br>
+<label for="city">City:</label>
+<input type="text" id="city" name="city" required><br>
+<label for="state">State:</label>
+<input type="text" id="state" name="state" required><br>
+<label for="zipcode">Zipcode:</label>
+<input type="text" id="zipcode" name="zipcode" required><br>
+<label for="description">Enter Job Description</label>
+<textarea id="description" name="description"></textarea><br>
+<div id="partsContainer">
+<div id="partLabel">
+<label for="p1">Parts:</label>
+</div>
+<div id="costLabel">
+<label for="cost1">Cost:</label>
+</div>
+<div id="qtyLabel">
+<label for="qty1">Qty:</label><br>
+</div>
+<input type="text" id="p1" name="p1" class="parts">
+<input type="text" id="cost1" name="cost1" class="cost">
+<input type="text" id="qty1" name="qty1" class="qty"><br>
+</div>
+<input type="button" id="parts" onclick="addParts()" value="Parts">
+<br>
+<input type="button" id="genInvoiceButton" onclick="generateInvoice()" value="Generate Invoice"><br>
+
+
+</fieldset>
+</form>
+
+</body>

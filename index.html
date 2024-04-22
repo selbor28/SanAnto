@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta http-equiv="X-UA-Compatible" content="IE-edge" />
+<title>San Anto</title>
+<link rel="stylesheet" href="css/styles.css">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
+<script type="text/javascript" src="js/scripts.js"></script> 
+</head>
+
+<body>
+<h1>Home Of SanAnto.Net</h1>
+<nav>
+	<a href="index.html">Home</a> |
+	<a href="db.html">Database</a> |
+	<a href="/bcards/bcards.html">Business Cards</a> |
+	<a href="invoice.html">Invoice</a>
+</nav>
+
+<form id="lookup" action="clientlookup.php" method="get">
+<fieldset>
+<legend>Client Lookup</legend>
+<label for="fName">Enter name to lookup</label>
+<input type="text" id="fName" name="fName">
+
+<input type="button" value="Lookup" onclick="clookup(fName.value)">
+</fieldset>
+</form>
+<form id="lookup" action="" method="get">
+<fieldset>
+<legend>Client Lookup2</legend>
+<label for="search_term">Enter name to lookup</label>
+<input type="text" id="search_term" name="search_term">
+
+<input type="button" value="Lookup" onclick="clookup2(search_term.value)">
+</fieldset>
+</form>
+
+<div id="results">
+<p>Results...</p>
+</div>
+<h2>Convert to Lower Case</h2>
+	<label for="lc">Convert to Lower Case:</label>
+	<input type="text" id="lc" name="lc">
+	<button type="button" onclick="toLC(lc)">Convert</button><br><br>
+<h2>Convert to Upper Case</h2>
+	<label for="uc">Convert to Upper Case:</label>
+	<input type="text" id="uc" name="uc">
+	<button type="button" onclick="toUC(uc)">Convert</button><br><br>
+<h2>Validate E-mail</h2>
+	<label for="valemail">Validate Email Address:</label>
+	<input type="text" id="valemail" name="valemail">
+	<button type="button" onclick="isEmailAddr(valemail)">Validate</button><br><br>
+
+</body>
+</html>
