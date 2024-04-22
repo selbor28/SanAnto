@@ -1,0 +1,1 @@
+This is a website created to handle everyday business actions and transactions for sananto.net. The php files are not included due to security issues, if anybody wants a template I can make one for you.
