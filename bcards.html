@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>San Anto Business Cards</title>
+<link rel="stylesheet" href="../css/styles.css">
+
+</head>
+	
+<body>
+<h1>San Anto Business Cards</h1>
+<nav>
+     	<a href="..\index.html">Home</a> |
+        <a href="..\db.html">Database</a> |
+        <a href="bcards.html">Business Cards</a> |
+	<a href="..\invoice.html">Invoice</a>
+</nav>
+
+
+<h1>Generate Your Business Card</h1>
+<form id="business_info_form">
+    <label for="color">Enter Color for Business Card:</label>
+    <input type="text" id="color" required>
+	
+	
+    <label for="name">Name:</label>
+    <input type="text" id="name" required>
+
+    <label for="address">Address:</label>
+    <input type="text" id="address">
+
+    <label for="city">City:</label>
+    <input type="text" id="city" required>
+
+    <label for="state">State:</label>
+    <input type="text" id="state" required>
+
+    <label for="zip">Zipcode:</label>
+    <input type="text" id="zip" >
+
+
+    <label for="company">Company:</label>
+    <input type="text" id="company" required>
+
+    <label for="email">Email:</label>
+    <input type="email" id="email" required>
+
+    <label for="phone">Phone Number:</label>
+    <input type="tel" id="phone" >
+
+    <label for="website">Website</label>
+    <input type="text" id="website" name="website">
+
+    <button type="submit">Generate Business Card</button>
+</form>
+
+<div class="bCard" id="business_card_container">
+<div class="bCompany">Company</div>
+<div class="bName">Name</div>
+<div class="bPhone">Phone</div>
+<div class="bAddress">Address</div>
+<div class="bCity">City</div>
+<div class="bState">State</div>
+<div class="bZip">Zip</div>
+<div class="bWebsite">Website</div>
+</div>
+	
+<script src="../js/bscripts.js"></script>
+</body>
+</html>
+
+
+
+
+
+
+
+
+</body>
+
+</html>
