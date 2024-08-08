@@ -1,7 +1,6 @@
 <?php
 $host = "localhost";
 $user = "selbor28";
-$pass = "Theend#2056";
 $db = "sanantodb";
 $in = $_POST['invoiceNumber'];
 $bn = $_POST['bname'];
